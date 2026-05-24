@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: taskflow
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskflow_db
+    username: taskflow_user
+    password: taskflow_password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
