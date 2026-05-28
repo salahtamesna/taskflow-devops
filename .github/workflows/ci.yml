@@ -1,5 +1,5 @@
 name: Java CI with Maven
-
+run-name: ${{ github.actor }} is testing out GitHub Actions 
 on:
   push:
     branches:
